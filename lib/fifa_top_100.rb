@@ -1,6 +1,7 @@
-require "fifa_top_100/version"
+require 'open-uri'
+require 'nokogiri'
+require 'pry'
 
-module FifaTop100
-  class Error < StandardError; end
-  # Your code goes here...
-end
+require_relative "./fifa_top_100/version"
+require_relative "./fifa_top_100/player"
+require_relative "./fifa_top_100/cli"
