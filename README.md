@@ -1,8 +1,6 @@
 # FifaTop100
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/fifa_top_100`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Welcome to FifaTop100 CLI Gem! Here you will find information on the Fifa rated top 100 players of 2019.
 
 ## Installation
 
@@ -22,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Type in FifaTop100 and follow the prompts
 
 ## Development
 
