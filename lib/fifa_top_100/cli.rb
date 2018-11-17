@@ -39,11 +39,9 @@ class FifaTop100::CLI
     else
       puts ""
       puts "Please type Y or N"
+      top_menu
     end
-
   end
-
-
 
   def list_players(input)
     if input == 1
@@ -76,6 +74,7 @@ class FifaTop100::CLI
   end
 
   def goodbye
+    puts ""
     puts "Goodbye!"
   end
 end
