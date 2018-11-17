@@ -3,4 +3,3 @@
 require_relative "../lib/fifa_top_100"
 
 FifaTop100::CLI.new.call
-#FifaTop100::Scraper.scrape_page
