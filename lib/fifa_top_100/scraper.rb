@@ -9,11 +9,10 @@ class FifaTop100::Scraper
     doc.css(".eas-media").each do |player|
       FifaTop100::Player.new ({
         team: player.css(".eas-l1").text,
-        name: player.css(".eas-d4").text.split(" ").drop(1).join,
+        name: player.css(".eas-d4").text.split(" ").drop(1).join(" "),
         rank: player.css(".eas-d4").text.split(" ").first,
         description: player.css(".eas-b3").text
       })
     end
-
   end
 end
