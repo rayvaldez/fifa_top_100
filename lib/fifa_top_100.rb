@@ -1,6 +1,7 @@
 require 'open-uri'
 require 'nokogiri'
 require 'pry'
+require 'colorize'
 
 require_relative "./fifa_top_100/version"
 require_relative "./fifa_top_100/scraper"

@@ -13,4 +13,8 @@ class FifaTop100::Player
     @@all
   end
 
+  def self.sort_all
+    @@all.sort! { |a, b| a.rank.to_i <=> b.rank.to_i }
+  end
+
 end
