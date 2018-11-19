@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-Type in FifaTop100 and follow the prompts
+Type in fifa_top_100 and follow the prompts
 
 ## Development
 
