@@ -2,7 +2,7 @@ class FifaTop100::CLI
 
   def call
     FifaTop100::Scraper.scrape_page
-    @players = FifaTop100::Player.sort_all
+    FifaTop100::Player.sort_all
     puts ""
     puts "----------------------------------------------------------"
     puts "          Welcome to the FifaTop100 CLI".colorize(:green)
@@ -30,7 +30,7 @@ class FifaTop100::CLI
         puts "-----------------------------------"
         puts "               Top 10".colorize(:green)
         puts "-----------------------------------"
-        @players[1..10].each.with_index(1) do |player, index|
+        FifaTop100::Player.all[1..10].each.with_index(1) do |player, index|
         puts "#{index}. #{player.name}".colorize(:yellow)
         end
         select_player
@@ -38,7 +38,7 @@ class FifaTop100::CLI
         puts "-----------------------------------"
         puts "               Top 20".colorize(:green)
         puts "-----------------------------------"
-        @players[1..20].each.with_index(1) do |player, index|
+        FifaTop100::Player.all[1..20].each.with_index(1) do |player, index|
         puts "#{index}. #{player.name}".colorize(:yellow)
         end
         select_player
@@ -46,7 +46,7 @@ class FifaTop100::CLI
         puts "-----------------------------------"
         puts "               Top 50".colorize(:green)
         puts "-----------------------------------"
-        @players[1..50].each.with_index(1) do |player, index|
+        FifaTop100::Player.all[1..50].each.with_index(1) do |player, index|
         puts "#{index}. #{player.name}".colorize(:yellow)
         end
         select_player
@@ -54,8 +54,8 @@ class FifaTop100::CLI
         puts "-----------------------------------"
         puts "               Top 100".colorize(:green)
         puts "-----------------------------------"
-        @players[1..100].each.with_index(1) do |player, index|
-        puts "#{index}. #{player.name}".colorize(:yellow)
+        FifaTop100::Player.all[1..100].each.with_index(1) do |player, index|
+          puts "#{index}. #{player.name}".colorize(:yellow)
         end
         select_player
       else
@@ -67,7 +67,7 @@ class FifaTop100::CLI
   def print_player
     input = gets.strip.to_i
     if input > 0 && input < 101
-      the_player = @players[input.to_i]
+      the_player = FifaTop100::Player.all[input.to_i]
       puts "----------------------------------------------------------------------------------------"
       puts ""
       puts "Name: #{the_player.name}".colorize(:white)
