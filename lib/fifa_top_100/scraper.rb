@@ -1,7 +1,3 @@
-require 'open-uri'
-require 'nokogiri'
-require 'pry'
-
 class FifaTop100::Scraper
 
   def self.scrape_page

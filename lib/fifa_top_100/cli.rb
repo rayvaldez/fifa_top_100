@@ -12,7 +12,6 @@ class FifaTop100::CLI
   end
 
   def main_menu
-    input = nil
     puts "Please choose from the following options:"
     puts ""
     puts "1.Top 10".colorize(:yellow)
