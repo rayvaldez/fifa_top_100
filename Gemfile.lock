@@ -17,7 +17,7 @@ GEM
       coderay (~> 1.1)
       method_source (~> 1.0)
     racc (1.5.2)
-    rake (10.5.0)
+    rake (13.0.3)
 
 PLATFORMS
   ruby
@@ -28,7 +28,7 @@ DEPENDENCIES
   fifa_top_100!
   nokogiri
   pry
-  rake (~> 10.0)
+  rake (~> 13.0)
 
 BUNDLED WITH
    1.17.3
