@@ -5,7 +5,7 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 gem "nokogiri"
 gem "colorize"
 
-group :testing, development do
+group :testing, :development do
   gem "pry"
 end
 
