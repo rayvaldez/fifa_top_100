@@ -1,13 +1,14 @@
 class FifaTop100::Scraper
 
   def self.scrape_page
-    doc = Nokogiri::HTML(open("https://www.easports.com/fifa/ratings/fifa-19-player-ratings-top-100"))
-    doc.css(".eas-media").each do |player|
+    doc = Nokogiri::HTML(open("https://www.ea.com/en-gb/games/fifa/fifa-19/ratings/fifa-19-player-ratings-top-100"))
+    # binding.pry
+    doc.css("ea-section-column")[3..205].each do |player|
       FifaTop100::Player.new ({
-        team: player.css(".eas-l1").text,
-        name: player.css(".eas-d4").text.split(" ").drop(1).join(" "),
-        rank: player.css(".eas-d4").text.split(" ").first,
-        description: player.css(".eas-b3").text
+        team: player.css("h2").text,
+        name: player.css("h3").text.split(" ").drop(1).join(" "),
+        rank: player.css("h3").text.split(" ").first,
+        description: player.css("p").text
       })
     end
   end
