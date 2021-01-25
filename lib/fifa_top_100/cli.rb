@@ -8,6 +8,12 @@ class FifaTop100::CLI
     puts "          Welcome to the FifaTop100 CLI".colorize(:green)
     puts "----------------------------------------------------------"
     puts ""
+
+    puts "Here you can find the Fifa Top 100 Players 2019 according to the"
+    puts "official Fifa website."
+    puts ""
+    puts "Follow the guide below to learn more about the Players."
+
     main_menu
   end
 
@@ -73,6 +79,8 @@ class FifaTop100::CLI
       puts "Name: #{the_player.name}".colorize(:white)
       puts "Team: #{the_player.team}".colorize(:white)
       puts "Rank: #{the_player.rank}".colorize(:white)
+      puts ""
+      puts ""
       puts "#{the_player.description}".colorize(:white)
       puts ""
       puts "----------------------------------------------------------------------------------------"
