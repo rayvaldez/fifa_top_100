@@ -24,15 +24,15 @@ Or install it yourself as:
 
 Type in './bin/fifa_top_100'
 
-![Image1](fifa_top_100/images/image1.png)
+![Image1](images/image1.png)
 Once the App has loaded, you can select from the 4 options on the menu. We will select option 1
 display the top 10 players from the list.
 
-![Image2](fifa_top_100/images/image2.png)
+![Image2](images/image2.png)
 The top 10 are now displayed, and we can now use the index beside each player to choose which player
 to learn more about. We will select Cristiano Ronaldo, who is option 1.
 
-![Image3](fifa_top_100/images/image3.png)
+![Image3](images/image3.png)
 Cristano Ronaldo's details are now shown, with the option to search again for another Player,
 or to end the app.
 
